@@ -9,13 +9,13 @@ We **recommend** doing development in offline. For that you need ruby to be inst
 1. Install Ruby as per this [installation guide](https://www.ruby-lang.org/en/documentation/installation/). For Linux, Mac OSX it's preferable to use [RVM](https://rvm.io/) and for Windows you can use [RubyInstaller](https://rubyinstaller.org/)
 2. Run `gem install bundler jekyll`. This install bundler and jekyll.
 3. Run `bundle install`
-4. Run `bundle exec jekyll serve` to start the server
+4. Run `bundle exec jekyll serve -b "/HydPy"` to start the server
 5. Site is up and running! Go to `localhost:4000`
 
 ## Adding Content
 
 ### Event post
-Create a Event post by creating a file called `yyyy-mm-dd-name-of-post-like-this.markdown` in the `/_posts/` directory with the following template:
+Create a Event post by creating a file called `yyyy-mm-dd-name-of-post-like-this.markdown` in the `/data/_posts/` directory with the following template:
 ```markdown
 ---
 layout: post          #important: don't change this
@@ -40,7 +40,7 @@ This text will not be shown in the excerpt because it is after the excerpt separ
 ```
 
 ### FAQ Question entry
-Create a Question entry (that is listed in the Frequently Asked section on the Home page) in this directory by creating a file called `yyyy-mm-dd-do-i-have-a-question.markdown` in the `/_faqs/` directory with the following template:
+Create a Question entry (that is listed in the Frequently Asked section on the Home page) in this directory by creating a file called `yyyy-mm-dd-do-i-have-a-question.markdown` in the `/data/_faqs/` directory with the following template:
 ```markdown
 ---
 layout: question
